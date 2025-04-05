@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タイピングゲーム</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>タイピングゲーム</h1>
+        
+        <div class="game-container">
+            <div id="timer">60</div>
+            <div id="score">スコア: 0</div>
+            
+            <div id="word-display" class="word-display">
+                <div id="target-word">ここをクリックしてスタート</div>
+                <div id="typed-word" class="typed-word"></div>
+            </div>
+            
+            <input type="text" id="word-input" autocomplete="off" disabled>
+            
+            <div class="stats">
+                <div id="accuracy">正確さ: 0%</div>
+                <div id="wpm">WPM: 0</div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="start-btn">スタート</button>
+            <button id="reset-btn">リセット</button>
+        </div>
+        
+        <div class="difficulty">
+            <label>難易度:</label>
+            <select id="difficulty-select">
+                <option value="easy">簡単</option>
+                <option value="medium" selected>普通</option>
+                <option value="hard">難しい</option>
+            </select>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
