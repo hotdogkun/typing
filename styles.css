@@ -66,6 +66,13 @@ h1 {
     margin-bottom: 0.5rem;
 }
 
+.romaji-hint {
+    font-size: 1rem;
+    color: #95a5a6;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
 .typed-word {
     position: absolute;
     top: 0;
@@ -81,6 +88,10 @@ h1 {
 
 .typed-word span.correct {
     color: #27ae60;
+}
+
+.typed-word span.partial {
+    color: #f39c12;
 }
 
 .typed-word span.incorrect {
